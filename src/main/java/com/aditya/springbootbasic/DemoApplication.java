@@ -8,23 +8,23 @@ import org.springframework.context.annotation.Bean;
 public class DemoApplication {
     
     public static void main(String[] args) {
+
+
+		// Recipe 1
+//		try (var ctx = SpringApplication.run(DemoApplication.class, args)) {
+//
+//			System.out.println("# Beans: " + ctx.getBeanDefinitionCount());
+//			var beanNames = ctx.getBeanDefinitionNames();
+//
+//			Arrays.sort(beanNames);
+//			Arrays.asList(beanNames).forEach(System.out::println);
+//		}
 	
-//	try(var ctx = SpringApplication.run(DemoApplication.class, args)){
-//	    
-//	    System.out.println("# Beans: " + ctx.getBeanDefinitionCount());
-//	    var beanNames = ctx.getBeanDefinitionNames();
-//	    
-//	    Arrays.sort(beanNames);
-//	    Arrays.asList(beanNames).forEach(System.out::println);
-//	}
-	
+    //calculator app
+    	
 	SpringApplication.run(DemoApplication.class, args);
 	
 	
     }
 
-//    @Bean
-//    String sayHello() {
-//        return "Hello World!";
-//    }
 }
