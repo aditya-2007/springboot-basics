@@ -1,5 +1,6 @@
 package com.aditya.springbootbasic.calc;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -27,14 +28,13 @@ public class CalculatorApplication {
 //	}
 	
 	@Bean
-	ApplicationRunner calculationRunner(Calculator calculator) {
+	ApplicationRunner calculationRunner(Calculator calculator,
+			@Value("${lhs}") int lhs,
+			@Value("${rhs}") int rhs,
+			@Value("${op}") String op) {
 		
 		return args -> {
-			
-			calculator.calculate(10, 20, "+");
-			calculator.calculate(10, 23, "*");
-			calculator.calculate(78, 44, "+");
-			calculator.calculate(1, 0, "*");
+			calculator.calculate(lhs, rhs, op);
 		};
 	}
 }

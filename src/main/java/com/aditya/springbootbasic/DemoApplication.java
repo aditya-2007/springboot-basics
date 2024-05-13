@@ -6,7 +6,8 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class DemoApplication {
-    
+ 
+/*
     public static void main(String[] args) {
 
 
@@ -24,7 +25,6 @@ public class DemoApplication {
     	
 	SpringApplication.run(DemoApplication.class, args);
 	
-	
     }
-
+*/
 }

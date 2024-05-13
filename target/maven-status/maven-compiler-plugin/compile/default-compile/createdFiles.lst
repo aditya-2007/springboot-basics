@@ -1,1 +1,7 @@
-com\aditya\springbootbasic\App.class
+com\aditya\springbootbasic\DemoApplication.class
+com\aditya\springbootbasic\HelloWorld.class
+com\aditya\springbootbasic\calc\Operation.class
+com\aditya\springbootbasic\calc\Calculator.class
+com\aditya\springbootbasic\calc\CalculatorApplication.class
+com\aditya\springbootbasic\calc\Multiplication.class
+com\aditya\springbootbasic\calc\Addition.class
